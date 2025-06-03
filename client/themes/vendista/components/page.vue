@@ -11,6 +11,7 @@
       :temporary='$vuetify.breakpoint.smAndDown'
       v-model='navShown'
       :right='$vuetify.rtl'
+      :width='vNavigationWidth'
       )
       vue-scroll(:ops='scrollStyle')
         nav-sidebar(:color='$vuetify.theme.dark ? `grey darken-4-d4` : `primary`', :items='sidebarDecoded', :nav-mode='navMode')
@@ -548,10 +549,13 @@ export default {
     pageUrl () { return window.location.href },
     upBtnPosition () {
       if (this.$vuetify.breakpoint.mdAndUp) {
-        return this.$vuetify.rtl ? `right: 235px;` : `left: 235px;`
+        return this.$vuetify.rtl ? `right: 305px;` : `left: 305px;`
       } else {
         return this.$vuetify.rtl ? `right: 65px;` : `left: 65px;`
       }
+    },
+    vNavigationWidth () {
+      return this.$vuetify.breakpoint.xsOnly ? '100vw' : '325'
     },
     sidebarDecoded () {
       return JSON.parse(Buffer.from(this.sidebar, 'base64').toString())

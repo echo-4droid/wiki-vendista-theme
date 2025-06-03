@@ -1,5 +1,9 @@
 /* THEME SPECIFIC STYLES */
 
+.v-navigation-drawer .v-navigation-drawer__content .v-list-item__title {
+  white-space: break-spaces;
+}
+
 .v-main .contents {
   color: mc('grey', '800');
   padding: .5rem 0 50px;
@@ -685,7 +689,7 @@
         display:inline-block;
         vertical-align:top;
         padding-top:0;
-        
+
         &:first-child {
           width: 100%;
         }
