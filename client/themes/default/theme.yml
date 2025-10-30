@@ -1,6 +1,6 @@
-name: Default
-author: requarks.io
-site: https://wiki.requarks.io/
+name: Vendista
+author: echo-4droid
+site: https://wiki.vendista.ru/
 version: 1.0.0
 requirements:
   minimum: '>= 2.0.0'

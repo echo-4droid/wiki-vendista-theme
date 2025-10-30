@@ -1,5 +1,9 @@
 /* THEME SPECIFIC STYLES */
 
+.v-navigation-drawer .v-navigation-drawer__content .v-list-item__title {
+  white-space: break-spaces;
+}
+
 .v-main .contents {
   color: mc('grey', '800');
   padding: .5rem 0 50px;
@@ -1275,8 +1279,6 @@
         color: #000;
         box-shadow: none;
         text-shadow: none;
-        white-space: pre-wrap !important;
-        overflow-wrap: break-word !important;
       }
     }
   }
