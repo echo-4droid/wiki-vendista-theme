@@ -1,6 +1,6 @@
-name: Vendista
+name: Vcharum
 author: echo-4droid
-site: https://wiki.vendista.ru/
+site: https://wiki.vcharum.am/
 version: 1.0.0
 requirements:
   minimum: '>= 2.0.0'
